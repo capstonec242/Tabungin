@@ -6,17 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".ui.settings.SettingsFragment">
 
+    <!-- First CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_edit_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/edit_profile"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:drawableStart="@drawable/baseline_edit_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Second CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_tema"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_edit_profile"
+        android:layout_marginTop="16dp"
+    android:padding="8dp">
+
     <TextView
-        android:id="@+id/text_settings"
+        android:id="@+id/tv_tema"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:text="@string/tema"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:drawableStart="@drawable/baseline_ads_click_24"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"/>
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_tema"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/language"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/baseline_abc_24"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"/>
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.cardview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
